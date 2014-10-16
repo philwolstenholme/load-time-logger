@@ -1,4 +1,4 @@
-#Chrome load time logger
+#Load time logger
 A greasemonkey script to record page load times and log them to a Google Drive form/spreadsheet. Uses the [Navigation Timing API](https://developer.mozilla.org/en-US/docs/Navigation_timing) to accurately measure the performance of a website. 
 
 ##Getting started
