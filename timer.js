@@ -34,12 +34,12 @@
                 var data = {};
                 data[loadTimeEntryID] = time;
                 data[documentURLEntryID] = document.URL;
-			jQuery.ajax({
-				url: formResponseURL,
-				data: data,
-				type: "POST",
-				dataType: "xml"
-			});
+		jQuery.ajax({
+			url: formResponseURL,
+			data: data,
+			type: "POST",
+			dataType: "xml"
+		});
             } else {
             	setTimeout(measure, 1000); 
             }
