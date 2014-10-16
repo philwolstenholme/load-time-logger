@@ -1,5 +1,5 @@
 #Chrome load time logger
-A greasemonkey script to record page load times and log them to a Google Drive form/spreadsheet.
+A greasemonkey script to record page load times and log them to a Google Drive form/spreadsheet. Uses the [Navigation Timing API](https://developer.mozilla.org/en-US/docs/Navigation_timing) to accurately measure the performance of a website. 
 
 ##Getting started
 1. Create a Google Form within [Google Drive](http://drive.google.com) (click the red CREATE button, then select Form).
@@ -9,6 +9,12 @@ A greasemonkey script to record page load times and log them to a Google Drive f
 5. Back in Google Drive, view your live form. Use the Inspector or View Source option to find the name attribute of both your form fields. These values will look something like `entry.725701822`. Copy and paste these values into the `loadTimeEntryID` and `documentURLEntryID` variables in timer.js.
 6. Amend the Greasemonkey match rule ```// @match      https://example.org/*``` to execute the script on whichever domain you want to collect load time data for.
 7. Add the script to your Greasemonkey dashboard and make sure it is enabled. Data will now be sent to your Google Form and saved for you in your Google Drive account. You will see XSS/'xmlhttprequest cannot load' errors in your console, but these can be ignored - the data is being sent to Google Drive despite the errors.
+
+###Compatibility
+
+Feature|Chrome|Firefox (Gecko)|Internet Explorer|Opera|Safari (WebKit)
+|---|---|---|---|---|---|
+|Basic support|6|7|9|15|8|
 
 ###Credit
 Load time logging code is based on [alex-vv's Chrome plugin to display page load times](https://github.com/alex-vv/chrome-load-timer).
