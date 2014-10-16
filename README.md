@@ -1,8 +1,8 @@
-#Load time logger
+#Google Drive load time logger
 A greasemonkey script to record page load times and log them to a Google Drive form/spreadsheet. Uses the [Navigation Timing API](https://developer.mozilla.org/en-US/docs/Navigation_timing) to accurately measure the performance of a website. 
 
 ##Getting started
-1. Create a Google Form within [Google Drive](http://drive.google.com) (click the red CREATE button, then select Form).
+1. Create a form within [Google Drive](http://drive.google.com) (click the red CREATE button, then select Form).
 2. Add a field to record the page load time, and another field to record the URL being loaded. A timestamp column will be automatically created for you in the spreadsheet that Google Drive will use to store the form submissions.
 3. Take a note of your form's key which can be found in the URL of the form creation page. It will look something like this: `1ZkptJLhs8XAR37wN1gq8TH0iNuCHWZ9eDv70NQvsbRA`.
 4. Open timer.js and insert your form key into the `formResponseURL` variable , replacing the long string of `XXXX`s.
